@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #211a2f;
+    box-shadow: 5px 5px 20px 5px #2a2a48;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.title>h1{
+    font-size: 40px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.title > span{
+    font-size: 35px;
+    color: #fff;
+    margin-top: 5px;
+}
+.celcius,.fahrenheit,.kelvin{
+margin: 15px 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0;
+
+}
+.celcius>input,.fahrenheit>input,.kelvin>input{
+    flex: 5;
+    width: 80%;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    border-radius: 8px 0px 0px 8px;
+    text-align: center;
+    font-size: 25px;
+    color: #4d4d4b;
+}
+.celcius>span,.fahrenheit>span,.kelvin>span{
+    flex: 1;
+    height: 40px;
+    font-size: 30px;
+    background-color: #48486c;
+    border-radius: 0px 8px 8px 0px;
+    padding: 0px 0px 0px 10px;
+}
+/* for the safari,edge,chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+/* for mozilla */
+input{
+    -moz-appearance: textfield;
+}
+.button button{
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #211a2f;
+    background-color: #f5f5dc;
+    font-family: sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #48486c;
+}
+.button button:hover{
+    background-color: #211a2f;
+    color: #f5f5dc;
+    
+}
